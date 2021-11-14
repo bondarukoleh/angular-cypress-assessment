@@ -180,7 +180,7 @@ discussed with the dev team.
 
 ### About the assessment
 <details>
-  <summary>Environment setup</summary>
+  <summary>A few words about the assessment</summary>
 
 ##### Bugs
 According to spec, there is one bug that you can find out if you run the test - it's that previous search results are
