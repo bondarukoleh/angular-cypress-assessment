@@ -99,7 +99,7 @@
       "projectType": "application",
       "architect": {
         "e2e": {
-          "builder": "<name of builder>:cypress",
+          "builder": "@cypress/schematic:cypress",
           "options": {
             "browser": "chrome",
             "headless": true
@@ -107,13 +107,13 @@
           "configurations": {
             "e2e": {
               "devServerTarget": "tnt-assignment:serve",
-              "configFile": "<your cypress config file>",
+              "configFile": "cypress.json",
               "headless": false
             }
           }
         },
         "lint": {
-          "builder": "<name of builder>:tslint",
+          "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
               "cypress/tsconfig.e2e.json"
@@ -121,6 +121,13 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
           }
         }
       }

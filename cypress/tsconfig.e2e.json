@@ -1,14 +1,15 @@
 {
+  "experimentalDecorators": true,
   "extends": "../tsconfig.json",
+  "include": ["**/*.ts", "node_modules/cypress"],
   "compilerOptions": {
+    "sourceMap": false,
     "outDir": "../out-tsc/e2e",
     "baseUrl": "./",
     "module": "commonjs",
     "target": "es5",
     "types": [
-      "jasmine",
-      "jasminewd2",
-      "node"
-    ]
+      "cypress", "node"
+    ],
   }
 }
