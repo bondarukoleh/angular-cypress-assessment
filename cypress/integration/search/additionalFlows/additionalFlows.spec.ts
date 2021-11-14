@@ -27,7 +27,7 @@ describe('Additional flows', () => {
     });
   });
 
-  it.only('should search with enter key pressed', () => {
+  it('should search with enter key pressed', () => {
     cy.debug();
     searchPage.searchFragment.planetsRadioButton.clickOn();
     searchPage.searchFragment.searchInput.sendKeys({inputValue: alderaan.name});

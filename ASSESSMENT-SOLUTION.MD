@@ -55,6 +55,8 @@ npm start
 
 #### Cypress run
 To run the cypress tests you can use the command:
+> If you don't like **chrome**, change command *browser* in [package.json][18] to some other chromium based, or remove
+> *browser* from command at all then tests will run with electron.
 ```shell
 npm run cypress:run
 ```
@@ -209,3 +211,4 @@ Thank you for this assessment, this was interesting for me. I have not tried out
 [15]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 [16]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator
 [17]: https://docs.cypress.io/guides/migrating-to-cypress/protractor#Angular-Schematic-Configuration
+[18]: package.json
